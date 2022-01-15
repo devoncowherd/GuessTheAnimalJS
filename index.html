@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Getan is the germanic root word for guess-->
+    <title>GETANimal</title>
+    <link rel="stylesheet" href="qwafee-style.css">
+    <script src="qwafee-script.js" defer></script>
+    <!--Fonts     
+    font-family: 'Dongle', sans-serif;
+
+    font-family: 'Rubik Beastly', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Rubik+Beastly&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>GETAN-imal</h1>
+        <p style="color: #9BBCBF; margin:0px; padding:0px;">Your Favorite Animal Guessing Game</p>
+    </header>
+    <nav>
+    
+        <input type="submit" value="About" class="about">
+        <input type="submit" value="Start" class="startGame" id="startGame"> 
+        <input type="submit" value="Skip" class="animalSkip">
+    
+    </nav>
+    <main>
+        <section class="animalDisplay">
+            <!--Logo = cat paw with a question mark on the palm-->
+            <img id="gameLogo" class="gameLogo" src="images/GetanimalPlaceholder.png"></img>
+            <img hidden src="#" id="animalImage" class="animalImage">
+        </section>
+     
+        <!--<section>
+            <p class="placeholder"></p>
+        </section>-->
+        
+        <section class="userSection">
+            <label class="prompt" id="prompt">Click <strong>"Start"</strong> to Begin</label>
+            <br>
+            <input type="text" class="userInput" id="userInput">
+            <br>
+            <input type="submit" class="userSubmit" value="Check">
+            <br>
+            <input type="submit" class="askHint" value="HINT">
+        </section>
+    </main>
+    <footer>&copy;Qwafee</footer>
+</body>
+</html>

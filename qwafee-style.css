@@ -1,0 +1,114 @@
+/*mobile-first design, eh?*/
+@media screen and (max-width: 1000px)
+{
+    body
+    {
+        margin:0px;
+        padding: 0px;
+        font-size: 2em;
+        font-family: 'Dongle', sans-serif;
+        text-align:center;
+        max-width: 100%;
+    }
+
+    header
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header h1
+    {
+        padding-top:5%;
+        margin:0px;
+    }
+
+    nav input
+    {
+        font-size: 1em;
+        width: 25%;
+        border-style: none;
+        background-color: orange;
+        display: inline;
+    }
+
+    input:hover
+    {
+        background-color: #9BBCBF;
+    }
+
+    main
+    {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    img
+    {
+        max-width: 100%;
+    }
+
+    .active 
+    {
+        background-color: hsl(11, 96%, 43%);
+    }
+
+    .gameLogo
+    {
+        max-height: 450px;
+        margin: 5%;
+        border-radius: 500px;
+        max-width:80%;
+    }
+
+    
+    .animalImage
+    {
+        margin: 5%;
+        border-radius: 100px;
+        width:80%;
+        max-width: 450px;
+    }
+
+    input
+    {
+        
+        font-size: 2em;
+        height: 100px;
+        width: 90%;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        border-radius: 25px;
+    }
+
+
+    .userInput
+    {
+        width: 80%;
+    }
+    .userSubmit
+    {   
+        width:82%;
+        border-style: none;
+        background-color: orange;
+        color: white;
+    }
+    
+    .askHint
+    {
+        border-style: none;
+        width:82%;
+        background-color: gray;
+        color: white;
+    }
+
+    .userSubmit:hover
+    {
+        background-color:#9BBCBF;
+    }
+
+    .askHint:hover
+    {
+        background-color:#9BBCBF;
+    }
+}
