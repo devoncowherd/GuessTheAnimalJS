@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <!--Getan is the germanic root word for guess-->
     <title>GETANimal</title>
+    <meta name="author" content="Qwafee">
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="qwafee-style.css">
     <script src="qwafee-script.js" defer></script>
     <!--Fonts     
@@ -22,13 +25,13 @@
 <body>
     <header>
         <h1>GETAN-imal</h1>
-        <p style="color: #9BBCBF; margin:0px; padding:0px;">Your Favorite Animal Guessing Game</p>
+        <p>Your Favorite Animal Guessing Game</p>
     </header>
     <nav>
     
         <input type="submit" value="About" class="about">
         <input type="submit" value="Start" class="startGame" id="startGame"> 
-        <input type="submit" value="Skip" class="animalSkip">
+        <input type="submit" value="Skip" class="animalSkip" id="animalSkip">
     
     </nav>
     <main>
@@ -36,6 +39,10 @@
             <!--Logo = cat paw with a question mark on the palm-->
             <img id="gameLogo" class="gameLogo" src="images/GetanimalPlaceholder.png"></img>
             <img hidden src="#" id="animalImage" class="animalImage">
+            <br>
+            <p class = "result" id = "result"></p>
+            <input type="submit" class="nextAnimal" id="nextAnimal" value="NEXT">
+            <p class = "ratio" id ="ratio"></p>
         </section>
      
         <!--<section>
@@ -45,13 +52,14 @@
         <section class="userSection">
             <label class="prompt" id="prompt">Click <strong>"Start"</strong> to Begin</label>
             <br>
-            <input type="text" class="userInput" id="userInput">
+            <input type="text" class="userInput" id="userInput" value="">
             <br>
-            <input type="submit" class="userSubmit" value="Check">
+            <input type="submit" class="userSubmit" id="userSubmit" value="CHECK">
             <br>
-            <input type="submit" class="askHint" value="HINT">
+            <input type="submit" class="askHint" id="askHint" value="HINT">
+            <p class="hint" id="hint"></p>
         </section>
     </main>
-    <footer>&copy;Qwafee</footer>
+    <footer><p style="margin:0px; bottom: 0px;">Copyright &copy;Qwafee 2021</p></footer>
 </body>
 </html>

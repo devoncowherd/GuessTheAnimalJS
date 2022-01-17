@@ -17,6 +17,12 @@
         padding: 0px;
     }
 
+    header p
+    {
+        color: #9BBCBF; 
+        margin:0px; 
+        padding:0px;"
+    }
     header h1
     {
         padding-top:5%;
@@ -82,16 +88,21 @@
     }
 
 
+    .nextAnimal
+    {
+        background-color: orange;
+    }
     .userInput
     {
         width: 80%;
     }
     .userSubmit
     {   
+        margin-bottom: 2px;
         width:82%;
         border-style: none;
         background-color: orange;
-        color: white;
+        color: black;
     }
     
     .askHint
@@ -110,5 +121,106 @@
     .askHint:hover
     {
         background-color:#9BBCBF;
+    }
+
+    .hint
+    {
+        background-color: lightyellow;
+        border: solid black 1px;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    body
+    {
+        
+        font-size:3em;
+        text-align: center;
+        font-family: 'Dongle', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:0px;
+        background-color: 
+    }
+    header
+    {
+        color: white;
+        max-width: 450px;
+        max-height: 450px;
+        float: left;
+        margin: 0px;
+        background-color: orange;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header p
+    {
+        color: black;
+    }
+    h1
+    {
+        margin: 0px;
+    }
+    nav
+    {
+
+        max-width: 450px;
+        margin: 0px;
+        padding: 0px;
+        background-color: 9BBCBF;     
+    }
+
+ 
+    .userSection
+    {
+        max-height: 450px;
+        position: absolute;
+        right: 100px;
+        top: 50px;
+    }
+
+    .ratio
+    {
+        position: absolute;
+        right: 250px;
+    }
+
+    footer
+    {
+        position: absolute;
+        bottom: 0px;
+        right: 200px;
+        color: #9BBCBF; 
+        Opacity: 0.5;
+    }
+    img
+    {
+        float: left;
+        max-width: 450px;
+    }
+
+    input
+    {
+        text-align: center;
+        background-color: orange;
+        padding: 5px;
+        margin:10px;
+        border-style: none;
+        font-size: 1em;
+    }
+
+    input:hover
+    {
+        opacity: 0.5;
+        color: #9BBCBF; 
+    }
+    .userInput
+    {     
+        background-color: #9BBCBF; 
+        width: 450px;
     }
 }
