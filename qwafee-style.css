@@ -49,6 +49,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    
     img
     {
         max-width: 100%;
@@ -129,6 +130,45 @@
         border: solid black 1px;
         color: black;
     }
+
+    .authors
+    {
+        height: 500px;
+    }
+    button
+    {
+        margin: 0px;
+        padding: 0px;
+        font-size: 2em;
+        width: 800px;
+        max-width: 80%;
+        background-color: #9BBCBF;
+        font-family: 'Dongle', sans-serif;
+
+    }
+
+    button:hover
+    {
+        opacity: 0.5;
+    }
+
+    table, tr, td, th
+    {
+        margin: 5%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        border-bottom: solid black 1px;
+        border-right: solid black 1px;
+        padding: 10px;
+    }
+    
+    footer
+    {
+        bottom: 0px;
+        opacity: 0.5;
+    }
 }
 
 @media screen and (min-width: 1000px)
@@ -144,6 +184,7 @@
         margin-top:0px;
         background-color: 
     }
+
     header
     {
         color: white;
@@ -215,12 +256,28 @@
 
     input:hover
     {
-        opacity: 0.5;
-        color: #9BBCBF; 
+        opacity: 0.8;
     }
     .userInput
     {     
         background-color: #9BBCBF; 
         width: 450px;
+    }
+    
+    table, tr, td, th
+    {
+        margin: 5%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        border-bottom: solid black 1px;
+        border-right: solid black 1px;
+        padding: 10px;
+    }
+    footer
+    {
+        bottom: 0px;
+        position: fixed;
     }
 }

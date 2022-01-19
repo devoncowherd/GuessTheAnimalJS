@@ -1,5 +1,4 @@
 //Top Menu Variables
-const gameAbout = document.querySelector(".about");
 const startGame = document.querySelector(".startGame");
 const animalSkip = document.querySelector(".animalSkip");
 const nextAnimal = document.querySelector(".nextAnimal");
@@ -12,6 +11,7 @@ var prompt = document.querySelector(".prompt");
 var randomAnimal;
 var selectedAnimal;
 var rightAnimal;
+var showCredits = false;
 
 
 //User Input Variables
@@ -59,6 +59,23 @@ document.getElementById("userSubmit").disabled = true;
 document.getElementById("askHint").disabled = true;
 document.getElementById("nextAnimal").hidden = true;
 document.getElementById("hint").hidden = true;
+
+//Gives Proper Credits
+function giveCredit()
+{
+    if (showCredits === false)
+    {
+        document.getElementById("authors").hidden = false;
+        showCredits = true;
+
+    }
+    else
+    {
+        var showCredits = false;
+        document.getElementById("authors").hidden = true;
+
+    }
+}
 
 //Get a hint based on animal sound
 function getHint()
@@ -436,4 +453,4 @@ startGame.addEventListener("click",easyMode);
 userSubmit.addEventListener("click",checkInput);
 animalSkip.addEventListener("click", skipAnimal);
 nextAnimal.addEventListener("click", goNext);
-askHint.addEventListener("click", getHint)
+askHint.addEventListener("click", getHint);
